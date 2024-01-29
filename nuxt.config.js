@@ -6,7 +6,7 @@ import enLocales from './locales/en-US.js'
 // import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  target: 'static',
+  target: 'server',
   ssr: true,
   head: {
     htmlAttrs: {
@@ -156,7 +156,7 @@ export default {
   // },
   router: {
     mode: 'history',
-    base: '/website/',
+    base: '/website',
     extendRoutes(routes) {
       routes.push({
         path: '*',
@@ -192,10 +192,11 @@ export default {
     transpile: ['vee-validate/dist/rules'],
   },
 
-  // server: {
-  //   port: 5000,
-  // },
-  // env: {
-  //   baseUrl: process.env.baseUrl || '',
-  // },
+  server: {
+    port: 5010,
+  },
+
+  env: {
+    baseUrl: process.env.baseUrl || '',
+  },
 }

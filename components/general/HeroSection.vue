@@ -19,13 +19,8 @@
     <!-- End:: Section Content -->
 
     <!-- Start:: Mobile Mockup -->
-    <div
-      class="mobile_mockup_wrapper focus_screen"
-      data-aos-once="true"
-      data-aos="zoom-in"
-      data-aos-delay="500"
-      data-aos-duration="1000"
-    >
+    <div class="mobile_mockup_wrapper focus_screen" data-aos-once="true" data-aos="zoom-in" data-aos-delay="500"
+      data-aos-duration="1000">
       <!-- <client-only>
         <nuxt-img
           provider="static"
@@ -38,13 +33,8 @@
           loading="lazy"
         />
       </client-only> -->
-        <img
-          src="~/assets/media/images/mobileScreens/DarkClay.png"
-          width="450"
-          height="300"
-          alt="App Splash"
-          loading="lazy"
-      />
+      <img src="~/assets/media/images/mobileScreens/hero_2.png" width="450" height="300" alt="App Splash"
+        loading="lazy" />
     </div>
     <!-- End:: Mobile Mockup -->
   </div>

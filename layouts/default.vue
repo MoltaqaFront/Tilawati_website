@@ -21,7 +21,7 @@ export default {
 
   head() {
     return {
-      titleTemplate: "Tilawati",
+      titleTemplate: "Tilawati - تلاوتي",
       meta: [
         {
           hid: 'description',
