@@ -1,10 +1,10 @@
 <template>
   <div class="static_page_content_wrapper">
-    <MainLoader v-if="isLoading" />
+    <!-- <MainLoader v-if="isLoading" /> -->
 
     <div class="container">
       <div class="page_title">
-        <h2>{{ terms_title }}</h2>
+        <h2>{{ $t("nav.policy") }}</h2>
       </div>
 
       <div class="page_content">
@@ -55,35 +55,35 @@ export default {
 
   data() {
     return {
-      isLoading:false,
+      isLoading: false,
       terms_title: '',
       terms_content: ''
     };
   },
 
-  methods:{
+  methods: {
     async getData() {
-    try {
-      return await this.$axios.get(`get-settings/privacy_policy`).then(response => {
-        this.isLoading=true;
-        this.terms_title = response.data.data.name;
-        this.terms_content = response.data.data.value;
-        // console.log(response.data.body.homepage.privacy_policy.title)
-      }).catch(error => {
-        console.log(error)
-      })
-    } catch (error) {
-      console.log("catch : " + error)
-    }
+      try {
+        return await this.$axios.get(`get-settings/privacy_policy`).then(response => {
+          this.isLoading = true;
+          this.terms_content = response.data.data;
+          // this.terms_title = response.data.data.name;
+          // console.log(response.data.body.homepage.privacy_policy.title)
+        }).catch(error => {
+          console.log(error)
+        })
+      } catch (error) {
+        console.log("catch : " + error)
+      }
     }
   },
 
-  mounted(){
+  mounted() {
     this.getData();
-    setTimeout(() => {
-      this.isLoading = false;
-      document.body.style.overflow = "unset";
-    }, 2000);
+    // setTimeout(() => {
+    //   this.isLoading = false;
+    //   document.body.style.overflow = "unset";
+    // }, 2000);
   }
 };
 </script>
@@ -104,6 +104,7 @@ export default {
 
   .page_content {
     margin-top: 25px;
+
     .item_title,
     .item_content {
       word-break: break-word;
@@ -116,6 +117,7 @@ export default {
       font-size: 22px;
       color: var(--main_theme_clr);
     }
+
     .item_content {
       font-size: 17px;
       color: var(--light_gray_clr);

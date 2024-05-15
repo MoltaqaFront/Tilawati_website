@@ -4,7 +4,7 @@
 
     <div class="container">
       <div class="page_title">
-        <h2>{{ $t("terms.title") }}</h2>
+        <h2>{{ $t("pages.project_details") }}</h2>
       </div>
 
       <div class="page_content">
@@ -65,10 +65,10 @@ export default {
   methods: {
     async getData() {
       try {
-        return await this.$axios.get(`get-settings/terms_and_conditions`).then(response => {
+        return await this.$axios.get(`get-settings/trip`).then(response => {
           this.isLoading = true;
-          // this.terms_title = response.data.data.name;
           this.terms_content = response.data.data;
+          // this.terms_title = response.data.data.name;
           // console.log(response.data.body.homepage.terms_and_conditions.title)
         }).catch(error => {
           console.log(error)

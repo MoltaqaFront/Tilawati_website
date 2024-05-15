@@ -1,21 +1,22 @@
 // Start:: Importing Abstracts
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
+@import './abstracts/variables';
+@import './abstracts/mixins';
 // End:: Importing Abstracts
 // Start:: Importing Base Style Files
-@import "./base/reset";
-@import "./base/global";
-@import "./base/typography";
+@import './base/reset';
+@import './base/global';
+@import './base/typography';
 // End:: Importing Base Style Files
 // Start:: Importing Components Style Files
 // ********** Start:: Importing Structure Components Styles ********** //
-@import "./components/structure/contact";
-@import "./components/structure/theFooter";
-@import "./components/structure/theNavbar";
-@import "./components/FormInputs/input_wrapper";
+@import './components/structure/contact';
+@import './components/structure/theFooter';
+@import './components/structure/theNavbar';
+@import './components/FormInputs/input_wrapper';
+@import './components/general/servicesSection';
 // ********** End:: Importing Structure Components Styles ********** //
 // ********** Start:: Importing Carousels Components Styles ********** //
-@import "./components/carousels/heroCarousel";
+@import './components/carousels/heroCarousel';
 // ********** End:: Importing Carousels Components Styles ********** //
 // End:: Importing Components Style Files
 // Start:: Importing Layouts Style Files
@@ -25,22 +26,21 @@
 // Start:: Importing Themes Style Files
 // End:: Importing Themes Style Files
 // Start:: Importing Vendors Style Files
-@import "./vendors/bootstrap";
-@import "./mainRtl.scss";
+@import './vendors/bootstrap';
+@import './mainRtl.scss';
 // End:: Importing Vendors Style Files
 .focus_screen {
-    animation: focus_screen 5s infinite !important;
+  animation: focus_screen 5s infinite !important;
 }
 
 @keyframes focus_screen {
-    0% {
-        transform: scale(1.02);
-    }
-    50% {
-        transform: scale(0.95);
-    }
-    100% {
-        transform: scale(1.02);
-        ;
-    }
+  0% {
+    transform: scale(1.02);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1.02);
+  }
 }

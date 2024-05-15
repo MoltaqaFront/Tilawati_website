@@ -7,6 +7,10 @@
       <HeroSection />
       <!-- End:: Hero Section -->
 
+      <!-- Start:: FirstWord Section -->
+      <!-- <DefineQuran /> -->
+      <!-- End:: FirstWord Section -->
+
       <!-- Start:: Services Section -->
       <ServicesSection />
       <!-- End:: Services Section -->
@@ -33,6 +37,7 @@ import MainLoader from "~/components/ui/MainLoader.vue";
 import HeroSection from "~/components/general/HeroSection.vue";
 import ServicesSection from "~/components/general/ServicesSection.vue";
 import AboutSection from "~/components/general/AboutSection.vue";
+import DefineQuran from "~/components/general/defineQuran.vue";
 import AppScreensSection from "~/components/general/AppScreensSection.vue";
 import DownloadApp from "~/components/general/DownloadApp.vue";
 import BaseInput from "~/components/FormInputs/BaseInput.vue";
@@ -52,6 +57,7 @@ export default {
     MainLoader,
     HeroSection,
     ServicesSection,
+    DefineQuran,
     AboutSection,
     AppScreensSection,
     DownloadApp,

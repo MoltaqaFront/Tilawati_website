@@ -21,8 +21,8 @@
       .container-xl {
         @include flexStartAlignment;
         .slide_desc_content_wrapper {
-          margin-bottom: 70px;
-          width: 50%;
+          margin-top: 70px;
+          width: 60%;
           .subtitle {
             margin: 0;
             font-size: 30px;
@@ -82,7 +82,7 @@
 @media (max-width: 850px) {
   .hero_section_wrapper {
     .slider_image_wrapper {
-      height: 350px;
+      // height: 350px;
       .slide_content_wrapper {
         @include flexCenterAlignment;
         .container-xl {
@@ -90,6 +90,7 @@
           .slide_desc_content_wrapper {
             margin-block: 50px 20px;
             max-width: 100%;
+            width: 100%;
             .subtitle {
               margin: 0;
               font-size: 18px;

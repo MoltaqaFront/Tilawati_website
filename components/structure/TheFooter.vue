@@ -51,7 +51,7 @@
                 <i class="fa-solid fa-fax"></i>
               </span>
 
-              <a href="tel:0566989608"><span class="value"> 0566989608</span></a>
+              <a href="tel:966509369417"><span class="value">966509369417</span></a>
             </li>
 
             <li class="contact_info_item">
@@ -59,29 +59,43 @@
                 <i class="fa-solid fa-location-dot"></i>
               </span>
 
-              <a href="https://goo.gl/maps/pyKsGuyD9gRBR2UC7" target="_blank"> <span class="value"> {{ $t('address') }} </span> </a>
+              <a href="https://goo.gl/maps/pyKsGuyD9gRBR2UC7" target="_blank"> <span class="value"> {{ $t('address') }}
+                </span> </a>
             </li>
           </ul>
 
-          <!-- <ul class="social_links_list">
+          <ul class="social_links_list">
             <li class="social_links_item">
-              <a href="https://twitter.com/CaaptainOne" target="_blank" class="icon">
+              <a href="https://wa.me/966509369417" target="_blank" class="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
+
+            <li class="social_links_item">
+              <a href="https://twitter.com/tilawatiapp" target="_blank" class="icon">
                 <i class="fa-brands fa-twitter"></i>
               </a>
             </li>
 
             <li class="social_links_item">
-              <a href="https://www.facebook.com/Captain-one-%D9%83%D8%A7%D8%A8%D8%AA%D9%86-%D9%88%D8%A7%D9%86-100203022791919/" target="_blank" class="icon">
+              <a href="https://www.facebook.com/tilawati.ap" target="_blank" class="icon">
                 <i class="fa-brands fa-square-facebook"></i>
               </a>
             </li>
 
             <li class="social_links_item">
-              <a href="https://www.instagram.com/caaptainone/" target="_blank" class="icon">
+              <a href="https://www.instagram.com/tilawatiapp/" target="_blank" class="icon">
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
-          </ul> -->
+
+            <li class="social_links_item">
+              <a href="https://www.tiktok.com/@tilawati.app" target="_blank" class="icon">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+          </ul>
+
         </div>
         <!-- End:: Contact Info Wrapper -->
       </div>

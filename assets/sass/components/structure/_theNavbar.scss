@@ -24,12 +24,12 @@
     .routes_wrapper {
       .routes_list {
         @include flexCenterAlignment;
-        column-gap: 30px;
+        column-gap: 15px;
         .navbar_route {
           & > button,
           & > a {
             color: var(--white_clr);
-            font-size: 16px;
+            font-size: 15px;
             font-family: $light_font;
             text-transform: uppercase;
             &.nuxt-link-exact-active,
@@ -182,12 +182,12 @@
     .routes_wrapper {
       .routes_list {
         @include flexCenterAlignment;
-        column-gap: 30px;
+        column-gap: 15px;
         .navbar_route {
           & > button,
           & > a {
             color: var(--white_clr);
-            font-size: 16px;
+            font-size: 15px;
             font-family: $light_font;
             text-transform: uppercase;
             &.nuxt-link-exact-active,
@@ -315,13 +315,30 @@
   }
 }
 .logo_wrapper {
-    max-width: 60px;
+  max-width: 60px;
 }
 
 .logo_wrapper a {
-    width: 100%;
+  width: 100%;
 }
 
 .logo_wrapper a img {
-    width: 100%;
+  width: 100%;
+}
+
+.btn:hover {
+  background: none !important;
+}
+
+.header_content_wrapper .routes_list .navbar_route a.dropdown-item {
+  text-align: center;
+  color: #000;
+
+  &:hover {
+    color: #b97e12;
+  }
+}
+
+.dropdown-menu.show {
+  left: -34px;
 }

@@ -26,6 +26,8 @@ export default {
     // ****** START:: IMPORTING MAIN SCSS STYLES ****** //
     '@/assets/sass/main.scss',
     '~/node_modules/bootstrap/dist/css/bootstrap.min.css',
+    'bootstrap/dist/css/bootstrap.css',
+    'bootstrap-vue/dist/bootstrap-vue.css',
     // ****** END:: IMPORTING MAIN SCSS STYLES ****** //
 
     // "animate.css",
@@ -59,7 +61,6 @@ export default {
     { src: '@/plugins/font-awesome.js' },
     // ****** END:: IMPORTING FONT AWESOME FILE ****** //
 
-
     { src: '@/plugins/sweetalert.js' },
 
     { src: '@/plugins/slick-carousel.js', ssr: false },
@@ -71,6 +72,7 @@ export default {
       src: '~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
       mode: 'client',
     },
+    { src: '@/plugins/bootstrap-vue.js', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -90,26 +92,29 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
 
+    'bootstrap-vue/nuxt',
+
     // '@nuxt/image',
 
     // ===== END:: PROJECT MODULES
     [
       'nuxt-i18n',
       {
-        locales: [{
-          name: 'عربي ',
-          code: 'ar',
-          iso: 'ar-AR',
-          file: 'ar-AR.js',
-          dir: 'rtl',
-        },
-        {
-          name: 'English',
-          code: 'en',
-          iso: 'en-US',
-          file: 'en-US.js',
-          dir: 'ltr',
-        },
+        locales: [
+          {
+            name: 'عربي ',
+            code: 'ar',
+            iso: 'ar-AR',
+            file: 'ar-AR.js',
+            dir: 'rtl',
+          },
+          {
+            name: 'English',
+            code: 'en',
+            iso: 'en-US',
+            file: 'en-US.js',
+            dir: 'ltr',
+          },
         ],
         lazy: true,
         langDir: 'locales/',
@@ -138,7 +143,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: 'https://tilawati.net/api/client-api/v1/',
+    baseURL: 'https://backend.tilawati.net/client-api/v1/',
 
     headers: {
       common: {
@@ -156,15 +161,18 @@ export default {
   // },
   router: {
     mode: 'history',
-    base: '/website',
+    base: '/',
     extendRoutes(routes) {
-      routes.push({
-        path: '*',
-        redirect: '/',
-      }, {
-        path: '/en',
-        redirect: '/',
-      })
+      routes.push(
+        {
+          path: '*',
+          redirect: '/',
+        },
+        {
+          path: '/en',
+          redirect: '/',
+        }
+      )
     },
   },
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
