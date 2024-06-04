@@ -104,7 +104,8 @@ export default {
   box-shadow: 0 0px 16px #b97e12;
   border-radius: 5px;
   background: #000;
-  padding: 20px 30px
+  padding: 20px 30px;
+  margin-top: 40px;
 }
 
 .card-header {

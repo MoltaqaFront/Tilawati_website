@@ -57,7 +57,7 @@ export default {
   policy: {
     title: 'سياسة الخصوصية',
   },
-  copyWrite: 'جميع الحقوق محفوظه ©2023',
+  copyWrite: 'جميع الحقوق محفوظه ©2024',
 
   contact: {
     title: 'تواصل معنا',

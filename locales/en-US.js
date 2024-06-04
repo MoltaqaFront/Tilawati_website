@@ -54,7 +54,7 @@ export default {
   policy: {
     title: 'Privacy Policy',
   },
-  copyWrite: '©2023 All Rights Reserved',
+  copyWrite: '©2024 All Rights Reserved',
 
   contact: {
     title: 'Contact Us',

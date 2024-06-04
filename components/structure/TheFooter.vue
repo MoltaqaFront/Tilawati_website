@@ -59,7 +59,8 @@
                 <i class="fa-solid fa-location-dot"></i>
               </span>
 
-              <a href="https://goo.gl/maps/pyKsGuyD9gRBR2UC7" target="_blank"> <span class="value"> {{ $t('address') }}
+              <a href="https://www.google.com/maps/place/شركة+كابتن+ون%E2%80%AD/@21.7743558,39.0929037,21z/data=!4m6!3m5!1s0x15c163e54f25e2ab:0xe701fad48abb23a8!8m2!3d21.7743526!4d39.0927441!16s%2Fg%2F11sd8mdwwv?hl=ar-SA&entry=ttu"
+                  target="_blank"> <span class="value"> {{ $t('address') }}
                 </span> </a>
             </li>
           </ul>

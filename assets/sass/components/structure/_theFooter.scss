@@ -16,6 +16,7 @@
       &:not(:last-child) {
         margin-bottom: 30px;
       }
+      list-style: none;
       color: var(--main_theme_clr);
       font-size: 20px;
 
@@ -63,6 +64,7 @@
           font-size: 30px;
         }
       }
+      list-style: none;
     }
   }
 
