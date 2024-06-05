@@ -118,10 +118,6 @@ export default {
   cursor: pointer
 }
 
-.answer span {
-  font-family: system-ui !important;
-}
-
 p {
   font-size: 17px
 }
