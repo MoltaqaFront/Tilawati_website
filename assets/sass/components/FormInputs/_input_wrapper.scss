@@ -39,10 +39,7 @@
       transform: translateY(-50%);
       right: 15px; // RTL
       cursor: pointer;
-      i {
-      }
-      img {
-      }
+
     }
   }
   &.upload_file_text_preview {
@@ -152,8 +149,7 @@
         background: #fff;
         border-radius: 20px;
       }
-      .icon {
-      }
+
     }
     .keywords {
       display: flex;
@@ -356,10 +352,7 @@
     label {
       color: #fff;
     }
-    ._input {
-      input {
-      }
-    }
+
   }
   // Uplode Image
   &.uplodeImage {
