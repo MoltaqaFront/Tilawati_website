@@ -25,7 +25,9 @@
       .routes_list {
         @include flexCenterAlignment;
         column-gap: 15px;
+        list-style: none;
         .navbar_route {
+          list-style: none;
           & > button,
           & > a {
             color: var(--white_clr);
@@ -37,6 +39,7 @@
               color: var(--white_clr);
             }
           }
+          list-style: none;
         }
       }
     }

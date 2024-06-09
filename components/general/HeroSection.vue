@@ -105,7 +105,7 @@ export default {
   border-radius: 5px;
   background: #000;
   padding: 20px 30px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .card-header {
@@ -131,6 +131,6 @@ p {
 }
 
 ul li {
-  list-style: auto
+  list-style: none
 }
 </style>
