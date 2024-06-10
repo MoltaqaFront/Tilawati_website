@@ -134,6 +134,8 @@
         padding: 0;
         list-style: none;
         .links_list_item {
+          @include flexCenterAlignment;
+          column-gap: 15px;
           text-align: center;
           @include transitioning(0.4s);
           &:not(:last-child) {
@@ -344,4 +346,17 @@
 
 .dropdown-menu.show {
   left: -34px;
+}
+
+.header_content_wrapper .small_screens_nav_bar_wrapper .small_screens_nav_bar_links_list .links_list_item .dropdown-menu.show{
+    position: absolute;
+    transform: translate3d(-120px, 42px, 0px);
+    will-change: transform;
+    width: 340px;
+   a{
+    font-size: 12px;
+   }
+  &:hover {
+    color: #b97e12;
+  }
 }

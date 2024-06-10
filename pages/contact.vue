@@ -103,7 +103,7 @@ export default {
         email: "",
         phone: "",
         message: "",
-        type: "contact"
+        message_type: "Request"
       },
 
 
@@ -137,7 +137,7 @@ export default {
     async sendData() {
 
       try {
-        await this.$axios.$post('api/contact_us', this.form).then(response => {
+        await this.$axios.$post('contact_us', this.form).then(response => {
           this.form.name = '';
           this.form.email = '';
           this.form.phone = '';

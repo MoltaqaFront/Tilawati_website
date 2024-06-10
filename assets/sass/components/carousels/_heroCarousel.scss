@@ -135,6 +135,13 @@
     }
   }
 }
+@media (max-width: 575px) {
+  .hero_section_wrapper {
+    .slider_image_wrapper {
+      height: 1400px;
+    }
+  }
+}
 
 .hero_section_wrapper {
   background-image: url(../media/images/slider/banner1.jpg);

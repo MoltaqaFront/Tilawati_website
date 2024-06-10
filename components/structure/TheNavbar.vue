@@ -117,11 +117,20 @@
       </div>
 
       <ul class="small_screens_nav_bar_links_list">
-        <li class="links_list_item" @click="toggleSmallScreensNavbarDrawer">
+        <!-- <li class="links_list_item" @click="toggleSmallScreensNavbarDrawer">
           <button :class="$route.path == localePath('/') ? 'active' : ''" @click="scrollToSection('hero_section')">
             {{ $t('nav.home') }}
           </button>
-        </li>
+        </li> -->
+
+         <li class="links_list_item mx-15" >
+            <b-dropdown id="dropdown-1" :text="$t('nav.home')" class="">
+              <b-dropdown-item v-for="(item, index) in questions" :key="'k' + index"
+                @click="handleDropdownClick(item.answer)">
+                {{ item.question }}
+              </b-dropdown-item>
+            </b-dropdown>
+          </li>
 
         <li class="links_list_item" @click="toggleSmallScreensNavbarDrawer">
           <button @click="scrollToSection('about_section')">
