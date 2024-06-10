@@ -149,7 +149,7 @@
             text-decoration: none;
             font-size: 20px;
             font-family: $medium_font;
-            color: var(--dark_secondary_theme_clr);
+            color: var(--secondary_theme_clr);
             @include transitioning(0.4s);
             &.router-link-exact-active,
             &:hover {
@@ -307,7 +307,7 @@
             text-decoration: none;
             font-size: 20px;
             font-family: $medium_font;
-            color: var(--dark_secondary_theme_clr);
+            color: #b97e12;
             @include transitioning(0.4s);
             &.router-link-exact-active,
             &:hover {
@@ -350,11 +350,12 @@
 
 .header_content_wrapper .small_screens_nav_bar_wrapper .small_screens_nav_bar_links_list .links_list_item .dropdown-menu.show{
     position: absolute;
-    transform: translate3d(-120px, 42px, 0px);
+    transform: translate3d(-120px, 42px, 0px) !important;
     will-change: transform;
-    width: 340px;
+    width: 320px !important;
    a{
     font-size: 12px;
+    color: #000;
    }
   &:hover {
     color: #b97e12;

@@ -99,3 +99,33 @@
         }
     }
 }
+@media (max-width: 1024px) {
+  #app.rtl {
+    // font-family: $light_font;
+    direction: rtl;
+
+    .hero_section_wrapper .mobile_mockup_wrapper {
+      right: inherit;
+      left: 15%;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+    #app.rtl {
+        // font-family: $light_font;
+        direction: rtl;
+
+        .hero_section_wrapper {
+          .slider_image_wrapper {
+            height: 800px;
+          }
+        }
+
+      }
+}
