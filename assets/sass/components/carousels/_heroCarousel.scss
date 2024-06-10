@@ -126,20 +126,48 @@
   }
 }
 
+@supports (-moz-appearance: none) {
+  #app.rtl {
+      // font-family: $light_font;
+      direction: rtl;
+
+      .hero_section_wrapper .mobile_mockup_wrapper {
+        right: inherit;
+        left: 0%;
+
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+}
+
 @media (max-width: 1024px) {
   .hero_section_wrapper {
+    .slider_image_wrapper {
+      // height: 1000px;
+
+      }
     .section_shape {
       img {
         width: 105% !important;
       }
     }
+         .mobile_mockup_wrapper {
+           display: none;
+         }
   }
+
 }
 @media (max-width: 575px) {
   .hero_section_wrapper {
     .slider_image_wrapper {
-      height: 1400px;
+      height: 1500px;
     }
+  .mobile_mockup_wrapper {
+    display: none;
+  }
   }
 }
 
